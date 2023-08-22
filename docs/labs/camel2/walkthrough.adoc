@@ -4,10 +4,7 @@
 
 :experimental:
 
-:article-url: https://developers.redhat.com/articles/2023/02/10/how-run-camel-spring-boot-red-hat-developer-sandbox
-
-// URLs
-:codeready-url: http://codeready-che.{openshift-app-host}/
+:article-url: https://developers.redhat.com/articles/2023/08/15/some-article-url
 
 ifdef::env-github[]
 endif::[]
@@ -204,7 +201,12 @@ Inspect in the stub logs to investigate possible causes of failure.
 
 {empty} +
 
-=== Clean up your namespace
+
+
+
+[time=1]
+[id="section-six"]
+== Clean up your namespace
 
 When you're done playing in the _Developer Sandbox_, you can clean up your Sandbox namespace by un-deploying your Camel `simple` service and stub `end1` using the following _Maven_ `oc:undeploy` command for both:
 
@@ -216,3 +218,16 @@ mvn oc:undeploy -Popenshift -s configuration/settings.xml<br>
 {blank}
 
 Executing the command above for both services should leave your topology view clean from routes, services, and other Kubernetes artifacts in your namespace.
+
+{empty} +
+
+[type=verification]
+Is your namespace clean from artifacts?
+
+[type=verificationSuccess]
+You've successfully cleaned up your namespace !!
+
+[type=verificationFail]
+Inspect in the stub logs to investigate possible causes of failure.
+
+{empty} +
