@@ -36,7 +36,10 @@ A client invokes an OpenApi service. A _Camel_ route attends the call, translate
 == Explore the source code
 
 The _Camel_ source file `api-simple.xml` defines the entire end-to-end processing logic, which you can find in your project explorer under the path:
-e implementation.
+
+--
+* `some/path/camel/api-simple.xml`
+--
 
 {empty} +
 
